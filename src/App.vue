@@ -1,26 +1,32 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar v-if="$route.path == '/'" />
     <router-view />
   </div>
 </template>
 
 <script>
-import Navbar from './components/layout/Layout.vue'
+import Navbar from './layout/Layout.vue'
 export default {
   name: 'App',
-  component: {
+  components: {
     Navbar
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+  font-family: "Almarai";
+  src: local("Almarai"),
+   url(./assets/Fonts/Almarai/Almarai-Regular.ttf) format("truetype");
+  font-display: swap;
+
 }
+#app {
+  background-color: #E5E5E5;
+  font-family: "Almarai";
+  font-display: swap;
+}
+@import './assets/css/global.css';
 </style>

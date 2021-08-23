@@ -1,0 +1,22 @@
+/* nav */
+
+/* Search */
+
+/* Events */
+
+/* TabEventItem */
+@media  (max-width: 760px) {
+  .event--img {
+    display: none;
+  }
+  .event--info {
+    width: 80%;
+    margin-left: 0 !important;
+    margin-right: 0;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 18px !important;
+    line-height: 20px !important;
+  } 
+}

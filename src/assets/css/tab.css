@@ -1,0 +1,39 @@
+/* navbar */
+
+/* search.vue  */
+@media (max-width: 1280px) {
+  .search {
+    margin-left: 0px;
+    padding: 24px 32px !important; 
+  }
+  .search--input {
+    width: 100% !important;
+  }
+  .search--icon {
+    right: 6%;
+  }
+}
+
+/* Events */
+@media (max-width: 1280px) {
+  .main {
+    padding: 64px 32px 0px 32px;
+  }
+}
+
+/* EventList */
+@media (max-width: 1280px) { 
+  .events--list {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .event {
+    box-sizing: border-box;
+    padding: 24px;
+  }
+  .tab {
+    display: block;
+  }
+}
