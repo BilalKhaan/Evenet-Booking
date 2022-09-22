@@ -25,7 +25,7 @@ export default createStore({
   actions: {
     async fetchEvents (context) {
       console.log(process.env.NODE_ENV, 'mode')
-      const baseUrl = process.env.NODE_ENV == 'production' ? 'https://evenet-booking.herokuapp.com/' : 'http://localhost'
+      const baseUrl = process.env.NODE_ENV == 'production' ? 'https://evenet-booking.herokuapp.com' : 'http://localhost'
       const port = process.env.NODE_ENV == 'production' ? 5000 : 8080
       await axios.get(`${baseUrl}:${port}/events.json`).then(response => { 
         let data = EventMaper.mapEvents(response.data)
